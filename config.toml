@@ -1,0 +1,23 @@
+baseURL = "http://why.theplatypus.codes/"
+languageCode = "en-us"
+title = "Why The Platypus Codes"
+ignoreFiles = [ ".git/.*" ]
+
+[taxonomies]
+    tag = "tags"
+
+[params]
+    avatarurl = "/platypus.svg"
+
+# Social links
+[[params.social]]
+    name = "Github"
+    short = "GitHub"
+    weight = 1
+    url = "https://github.com/whytheplatypus/"
+
+[[params.social]]
+    name = "LinkedIn"
+    short = "LinkedIn"
+    weight = 1
+    url = "https://linkedin.com/in/dgage/"

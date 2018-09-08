@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 341.33334 341.33334"
+   height="341.33334"
+   width="341.33334"
+   xml:space="preserve"
+   id="svg3699"
+   version="1.1"><metadata
+     id="metadata3705"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3703"><clipPath
+       id="clipPath3715"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path3713"
+         d="M 0,256 H 256 V 0 H 0 Z" /></clipPath><clipPath
+       id="clipPath3735"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path3733"
+         d="M 0,256 H 256 V 0 H 0 Z" /></clipPath></defs><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,341.33333)"
+     id="g3707"><g
+       id="g3709"><g
+         clip-path="url(#clipPath3715)"
+         id="g3711"><text
+           id="text3719"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:214.82653809px;font-family:'Myriad Pro';-inkscape-font-specification:MyriadPro-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(0.9999975,-0.00478153,0.00223715,0.25890796,-1e-4,64.9004)"><tspan
+             id="tspan3717"
+             y="0"
+             x="0">α</tspan></text>
+<text
+           id="text3723"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:138.53529358px;font-family:'Times New Roman';-inkscape-font-specification:TimesNewRomanPSMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(0.91073683,0,0,-1,96.083,33.2539)"><tspan
+             id="tspan3721"
+             y="0"
+             x="0">Φ</tspan></text>
+</g></g><text
+       id="text3727"
+       style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.62689972px;font-family:'Times New Roman';-inkscape-font-specification:TimesNewRomanPSMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       transform="matrix(1,0,0,-0.74385613,109.2256,129.0449)"><tspan
+         id="tspan3725"
+         y="0"
+         x="0">Ω</tspan></text>
+<g
+       id="g3729"><g
+         clip-path="url(#clipPath3735)"
+         id="g3731"><text
+           id="text3739"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:63.08465195px;font-family:'Times New Roman';-inkscape-font-specification:TimesNewRomanPSMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(-0.00126021,-0.74385449,-0.99999921,9.3683646e-4,176.9766,162.5976)"><tspan
+             id="tspan3737"
+             y="0"
+             x="0">π</tspan></text>
+<text
+           id="text3743"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.62695312px;font-family:'Times New Roman';-inkscape-font-specification:TimesNewRomanPSMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(-0.00816681,-0.74383033,-0.99996665,0.00607438,176.9701,63.5526)"><tspan
+             id="tspan3741"
+             y="0"
+             x="0">η</tspan></text>
+<text
+           id="text3747"
+           style="font-variant:normal;font-weight:normal;font-stretch:normal;font-size:94.62689972px;font-family:'Times New Roman';-inkscape-font-specification:TimesNewRomanPSMT;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           transform="matrix(1,0,0,-0.74385613,124.9976,187.7031)"><tspan
+             id="tspan3745"
+             y="0"
+             x="0">?</tspan></text>
+</g></g></g></svg>
