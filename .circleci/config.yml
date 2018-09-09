@@ -20,6 +20,9 @@ jobs:
       - run:
           name: "Run Hugo"
           command:  hugo -t monotreme --config content/config.toml
+      - add_ssh_keys:
+          fingerprints:
+            - "82:16:2f:42:0c:bd:c8:61:40:51:23:ad:cc:3e:a5:ef"
       - deploy:
           name: "Github Pages"
           working_directory: public
