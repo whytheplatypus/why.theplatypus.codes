@@ -20,7 +20,7 @@ jobs:
       - deploy:
           name: "Github Pages"
           working_directory: public
-          command: ../scripts/deploy.sh
+          command: ../content/scripts/deploy.sh
 
 workflows:
   version: 2
