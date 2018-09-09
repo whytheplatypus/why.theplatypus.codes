@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:0.48
+    working_directory: ~/project
+    branches:
+      only:
+        - master
+    steps:
+      - checkout:
+          path: "content"
+      - run:
+          name: "Create Theme Directory"
+          command: "mkdir themes"
+      - run:
+          name: "Fetch Theme"
+          working_directory: themes
+          command: git clone --recurse-submodules https://github.com/whytheplatypus/hugo-monotreme monotreme
+      - run:
+          name: "Run Hugo"
+          command:  hugo -t monotreme --config content/config.toml
+      - deploy:
+          name: "Github Pages"
+          working_directory: public
+          commnd:
+            - git config --global user.email "$GH_EMAIL" 
+            - git config --global user.name "$CIRCLE_USERNAME"
+            - git init
+            - git remote add --fetch origin "$PAGES_REMOTE"
+            - git add -A
+            - git commit -m "Deploy to GitHub pages"
+            - git push origin master
