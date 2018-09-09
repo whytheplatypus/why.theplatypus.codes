@@ -4,9 +4,6 @@ jobs:
     docker:
       - image: cibuilds/hugo:0.48
     working_directory: ~/project
-    branches:
-      only:
-        - master
     steps:
       - checkout:
           path: "content"
@@ -31,3 +28,13 @@ jobs:
             - git add -A
             - git commit -m "Deploy to GitHub pages"
             - git push origin master
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build:
+          filters:
+             branches:
+               only:
+                 - master
