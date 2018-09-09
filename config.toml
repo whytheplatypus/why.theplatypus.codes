@@ -1,7 +1,7 @@
 baseURL = "http://why.theplatypus.codes/"
 languageCode = "en-us"
 title = "Why The Platypus Codes"
-ignoreFiles = [ ".git/.*" ]
+ignoreFiles = [ ".git/.*", "scripts/.*" ]
 
 [taxonomies]
     tag = "tags"
