@@ -15,6 +15,9 @@ jobs:
           working_directory: themes
           command: git clone --recurse-submodules https://github.com/whytheplatypus/hugo-monotreme monotreme
       - run:
+          name: "Make public directory"
+          command: mkdir public
+      - run:
           name: "Run Hugo"
           command:  hugo -t monotreme --config content/config.toml
       - deploy:
