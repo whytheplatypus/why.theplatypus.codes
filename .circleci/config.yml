@@ -20,7 +20,7 @@ jobs:
       - deploy:
           name: "Github Pages"
           working_directory: public
-          command:
+          commands:
             - git config --global user.email "$GH_EMAIL" 
             - git config --global user.name "$CIRCLE_USERNAME"
             - git init
