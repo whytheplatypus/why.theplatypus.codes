@@ -1,4 +1,4 @@
-baseURL = "http://why.theplatypus.codes/"
+baseURL = "https://why.theplatypus.codes/"
 languageCode = "en-us"
 title = "Why The Platypus Codes"
 ignoreFiles = [ ".git/.*", "scripts/.*" ]
