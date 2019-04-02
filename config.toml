@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Why The Platypus Codes"
 ignoreFiles = [ ".git/.*", "scripts/.*" ]
 
+googleAnalytics = "UA-137506633-1"
+
 [taxonomies]
     tag = "tags"
 
