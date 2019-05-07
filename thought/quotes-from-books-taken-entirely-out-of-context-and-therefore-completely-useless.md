@@ -1,5 +1,5 @@
 ---
-title: "Quotes from books taken entirely out of context and therefor completely useless."
+title: "Quotes from books taken entirely out of context and therefore completely useless."
 date: 2019-05-07T10:30:00-04:00
 draft: false
 tags:
