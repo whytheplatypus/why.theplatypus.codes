@@ -39,3 +39,31 @@ tags:
 <!-- -->
 
 > The user should not need to know how the procedure is implemented in order to use it. <cite>(p. 25)</cite>
+
+
+
+### The Elements Of Programming Style (Kernigan and Plauger)
+
+> Looking back on some of our own examples makes us realize how demanding an effort good programming is. <cite>(p. ix)</cite>
+
+<!-- -->
+
+> The way to learn to program well is by seeing, over and over, how real programs can be improved by the application of a few principles of good practice and a little common sense. Practice in critical reading leads to skill in rewriting, which in turn leads to better writing. <cite>(p. xi)</cite>
+
+<!-- -->
+
+> The principles of style, however, are applicable in all languages, including assembly codes. <cite>(p. xi)</cite>
+
+<!-- -->
+
+> Besides, there is the added danger that a too clever program may not say what you thought it said. <cite>(p. 2)</cite>
+
+<!-- -->
+
+> The trouble is, although any single weakness causes no great harm, the cumulative effect of several confusing statements is code that is simply unintelligible. <cite>(p. 3)</cite>
+
+<!-- -->
+
+> As much as possible, a program should be written so the control flow structures lead the reader quickly and directly to an understanding of what the program does. <cite>(p. 35)</cite>
+
+<!-- -->
