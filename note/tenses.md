@@ -14,4 +14,4 @@ Regarding the combination and exhibition of Behaviors.
 
 # Idiom Tense
 
-Regarding the mechanics and construction of actions.
+Regarding the implementation, mechanics, and construction of actions.
