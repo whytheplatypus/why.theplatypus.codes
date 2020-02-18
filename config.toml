@@ -1,12 +1,13 @@
 baseURL = "https://why.theplatypus.codes/"
 languageCode = "en-us"
 title = "Why The Platypus Codes"
-ignoreFiles = [ ".git/.*", "scripts/.*" ]
+ignoreFiles = [ ".git/.*", "scripts/.*", "public/.*", "themes/.*", "Makefile", "platypus.svg", "config.toml"]
 
 googleAnalytics = "UA-137506633-1"
 
 [taxonomies]
-    tag = "tags"
+  category = "categories"
+  tag = "tags"
 
 [params]
     avatarurl = "/platypus.svg"
