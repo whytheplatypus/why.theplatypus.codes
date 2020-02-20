@@ -117,6 +117,16 @@ Anything on the queue is looked at to see if it should be registered for forward
 ### Updating patterns on a ServMux
 ```
 func Connect(entry *mdns.ServiceEntry) {
+	if !strings.Contains(entry.Name, config.ServiceName) {
+		fmt.Println("unknown entry")
+		return
+	}
+```
+Some entries were coming through from other devices in the house.
+`switchboard` could probably be more picky in it's lookup,
+but "trust but verify" is a good rule to live by anyway.
+So if the entry doesn't look familiar, drop it.
+```
 	if existing, ok := registry[entry.InfoFields[0]]; ok {
 		if existing.AddrV4.Equal(entry.AddrV4) && existing.Port == entry.Port {
 			return
@@ -138,16 +148,6 @@ it was nessisary to swap out the `ServeMux` entirely.
 ### Registering patterns with a ServMux
 ```
 func register(entry *mdns.ServiceEntry) {
-	if !strings.Contains(entry.Name, config.ServiceName) {
-		fmt.Println("unknown entry")
-		return
-	}
-```
-Some entries were coming through from other devices in the house.
-`switchboard` could probably be more picky in it's lookup,
-but "trust but verify" is a good rule to live by anyway.
-So if the entry doesn't look familiar, drop it.
-```
 	if _, ok := registry[entry.InfoFields[0]]; ok {
 		return
 	}
@@ -155,8 +155,13 @@ So if the entry doesn't look familiar, drop it.
 `switchboard` keeps track of the patterns it's seen because the [`http`](https://golang.org/pkg/net/http/) default `ServeMux` panics if you try and tell it what to do with a pattern more than once. 
 ```
 	u, _ := url.Parse(fmt.Sprintf("http://%s:%d", entry.AddrV4, entry.Port))
-	rp := httputil.NewSingleHostReverseProxy(u)
-	Phonebook.Handle(entry.InfoFields[0], rp)
+	var handler http.Handler
+	handler = httputil.NewSingleHostReverseProxy(u)
+	parts := strings.SplitN(entry.InfoFields[0], "/", 2)
+	if len(parts) > 1 && parts[1] != "" {
+		handler = http.StripPrefix(fmt.Sprintf("/%s", parts[1]), handler)
+	}
+	Phonebook.Handle(entry.InfoFields[0], handler)
 	registry[entry.InfoFields[0]] = entry
 }
 ```
