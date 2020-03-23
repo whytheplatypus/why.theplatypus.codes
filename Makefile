@@ -6,7 +6,7 @@ public: themes
 	hugo -t monotreme --config config.toml -c .
 
 serve:
-	hugo serve -t monotreme --config config.toml - --contentDir .
+	hugo serve -t monotreme --config config.toml --disableFastRender --contentDir .
 
 clean:
 	rm -r public
