@@ -9,10 +9,7 @@ tags:
 - raspberrypi
 - reverse proxy
 - mDNS
-madlibs:
-- Some
-- weekend knitting
-- involving
+description: Creating a little reverse proxy configured by mDNS
 ---
 
 ## The problem
